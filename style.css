@@ -51,13 +51,24 @@ body {
   align-items: center;
 }
 
+li {
+  display: inline-block;
+  /* font-size: 0.7em; */
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+
+
+
 h2 {
   position: absolute;
   margin: 0;
   padding: 0;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 30%;
   float: left;
   letter-spacing: 0.3em;
   color: white;

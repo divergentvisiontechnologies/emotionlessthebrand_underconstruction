@@ -12,17 +12,58 @@
 </head>
 <body>
 <div id="main">
-		<h2 id="con">OUR WEBSITE IS CURRENTLY UNDER CONSTRUCTION
-		<br>
-		<br>
+		<h2 id="con">
+			<!-- TIME REMAINING UNTIL LAUNCH: -->
+		
+		<!-- <br> -->
+		
+		<div class="container" style="margin-bottom: 15vh;">
+			<ul>
+			  <li><span id="days"></span> days</li>
+			  <li><span id="hours"></span> Hours</li>
+			  <li><span id="minutes"></span> Minutes</li>
+			  <li><span id="seconds"></span> Seconds</li>
+			</ul>
+			<!-- <p>REMAINING</p> -->
+			<!-- <p style="font-size: x-small;">Our Store Will be Live on September 17th</p> -->
+			<p style="font-size: medium;">OUR STORE WILL BE LIVE ON SEPTEMBER 17TH</p>
+		  </div>
+		
 		<div class="socials">
-			<h6 style="margin-bottom: 2vh; margin-top: 4vh;">CONTACT US:</h6>
-			<a href="https://www.facebook.com/emotionlesssuriname" target="_blank"><img src="./img/facebook.png" alt="facebook icon" width="35vw"></a>
-			<a href="https://www.instagram.com/emotionlessthebrand" target="_blank"><img src="./img/instagram.png" alt="instagram icon" width="35vw"></a>
+			<!-- <h6 style="margin-bottom: 2vh; margin-top: 4vh;">VISIT OUR SOCIAL MEDIA PAGES:</h6> -->
+			<p style="font-size: large;">VISIT OUR SOCIAL MEDIA PAGES:</p>
+			<!-- <a href="https://www.facebook.com/emotionlesssuriname" target="_blank"><img src="./img/facebook.png" alt="facebook icon" width="55vw"></a> -->
+			<a href="https://www.facebook.com/emotionlessthebrand" target="_blank"><img src="./img/facebook.svg" alt="facebook icon" width="60vw"></a>
+			<!-- <a href="https://www.instagram.com/emotionlessthebrand" target="_blank"><img src="./img/instagram.png" alt="instagram icon" width="55vw"></a> -->
+			<a href="https://www.instagram.com/emotionlessthebrand" target="_blank"><img src="./img/instagram.svg" alt="instagram icon" width="60vw"></a>
 		</div>
 
 		</h2>
 	</div>
+<script>
+	const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
+let countDown = new Date('Sep 17, 2020 00:00:00').getTime(),
+    x = setInterval(function() {    
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+      //do something later when date is reached
+      //if (distance < 0) {
+      //  clearInterval(x);
+      //  'IT'S MY BIRTHDAY!;
+      //}
+
+    }, second)
+</script>
 </body>
 </html>
