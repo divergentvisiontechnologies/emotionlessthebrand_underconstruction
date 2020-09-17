@@ -17,21 +17,21 @@
 		
 		<!-- <br> -->
 		
-		<div class="container" style="margin-bottom: 15vh;">
+		<div class="container" style="margin-bottom: 8vh;">
 			<ul>
-			  <li><span id="days"></span> days</li>
+			  <!-- <li><span id="days"></span> days</li>
 			  <li><span id="hours"></span> Hours</li>
 			  <li><span id="minutes"></span> Minutes</li>
 			  <li><span id="seconds"></span> Seconds</li>
-			</ul>
+			</ul> -->
 			<!-- <p>REMAINING</p> -->
 			<!-- <p style="font-size: x-small;">Our Store Will be Live on September 17th</p> -->
-			<p style="font-size: medium;">OUR STORE WILL BE LIVE ON SEPTEMBER 17TH</p>
+			<p style="font-size: x-large;">OUR STORE WILL BE LIVE SOON..</p>
 		  </div>
 		
 		<div class="socials">
 			<!-- <h6 style="margin-bottom: 2vh; margin-top: 4vh;">VISIT OUR SOCIAL MEDIA PAGES:</h6> -->
-			<p style="font-size: large;">VISIT OUR SOCIAL MEDIA PAGES:</p>
+			<p style="font-size: large;">IN THE MEANTIME, VISIT OUR SOCIAL MEDIA PAGES:</p>
 			<!-- <a href="https://www.facebook.com/emotionlesssuriname" target="_blank"><img src="./img/facebook.png" alt="facebook icon" width="55vw"></a> -->
 			<a href="https://www.facebook.com/emotionlessthebrand" target="_blank"><img src="./img/facebook.svg" alt="facebook icon" width="60vw"></a>
 			<!-- <a href="https://www.instagram.com/emotionlessthebrand" target="_blank"><img src="./img/instagram.png" alt="instagram icon" width="55vw"></a> -->
@@ -41,21 +41,21 @@
 		</h2>
 	</div>
 <script>
-	const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
+// 	const second = 1000,
+//       minute = second * 60,
+//       hour = minute * 60,
+//       day = hour * 24;
 
-let countDown = new Date('Sep 17, 2020 00:00:00').getTime(),
-    x = setInterval(function() {    
+// let countDown = new Date('Sep 17, 2020 00:00:00').getTime(),
+//     x = setInterval(function() {    
 
-      let now = new Date().getTime(),
-          distance = countDown - now;
+//       let now = new Date().getTime(),
+//           distance = countDown - now;
 
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+//       document.getElementById('days').innerText = Math.floor(distance / (day)),
+//         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+//         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+//         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
       //do something later when date is reached
       //if (distance < 0) {
@@ -63,7 +63,7 @@ let countDown = new Date('Sep 17, 2020 00:00:00').getTime(),
       //  'IT'S MY BIRTHDAY!;
       //}
 
-    }, second)
+    // }, second)
 </script>
 </body>
 </html>
